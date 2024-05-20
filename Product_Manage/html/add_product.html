@@ -1370,8 +1370,8 @@
                         <label class="form-label">Phần Trăm Doanh Thu</label>
                         <input type="text" class="form-control" placeholder="%" />
                       </div>
-                      <button type="submit" class="btn btn-primary mb-4">Thêm</button>
-                      <button type="button" class="btn btn-primary mb-4">Hủy</button>
+                      <button type="submit" class="btn btn-primary mb-4")">Thêm</button>
+                      <button type="button" class="btn btn-primary mb-4" onclick="navigateToPage('product_manager.html')">Hủy</button>
                     </form>
                   </div>
                   <div class="col-md-6">
@@ -1453,6 +1453,20 @@
 <script src="../assets/js/pcoded.js"></script>
 <script src="../assets/js/plugins/feather.min.js"></script>
 
+<!-- Button chuyển tới trang bất kỳ -->
+<script>
+  function navigateToPage(pageUrl) {
+      window.location.href = pageUrl;
+  }
+</script>
+
+
+<script>
+  function navigateToPage(pageUrl) {
+      window.location.href = pageUrl;
+  }
+</script>
+
 <script>
   layout_change('false');
 </script>
@@ -1481,25 +1495,40 @@
   main_layout_change('vertical');
 </script>
 
- <div class="pct-c-btn">
-  <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_pc_layout">
+<div class="pct-c-btn">
+  <a
+    href="#"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvas_pc_layout"
+  >
     <i class="ph-duotone ph-gear-six"></i>
   </a>
 </div>
-<div class="offcanvas border-0 pct-offcanvas offcanvas-end" tabindex="-1" id="offcanvas_pc_layout">
+<div
+  class="offcanvas border-0 pct-offcanvas offcanvas-end"
+  tabindex="-1"
+  id="offcanvas_pc_layout"
+>
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title">Settings</h5>
-    <button type="button" class="btn btn-icon btn-link-danger ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"
-      ><i class="ti ti-x"></i
-    ></button>
+    <h5 class="offcanvas-title">Cài Đặt</h5>
+    <button
+      type="button"
+      class="btn btn-icon btn-link-danger ms-auto"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    >
+      <i class="ti ti-x"></i>
+    </button>
   </div>
   <div class="pct-body customizer-body">
     <div class="offcanvas-body py-0">
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
           <div class="pc-dark">
-            <h6 class="mb-1">Theme Mode</h6>
-            <p class="text-muted text-sm">Choose light or dark mode or Auto</p>
+            <h6 class="mb-1">Chế Độ Chủ Đề</h6>
+            <p class="text-muted text-sm">
+              Chọn Chế Độ Sáng Hoặc Tối Hoặc Tự Động
+            </p>
             <div class="row theme-color theme-layout">
               <div class="col-4">
                 <div class="d-grid">
@@ -1518,7 +1547,13 @@
               </div>
               <div class="col-4">
                 <div class="d-grid">
-                  <button class="preset-btn btn" data-value="false" onclick="layout_change('dark');" data-bs-toggle="tooltip" title="Dark">
+                  <button
+                    class="preset-btn btn"
+                    data-value="false"
+                    onclick="layout_change('dark');"
+                    data-bs-toggle="tooltip"
+                    title="Dark"
+                  >
                     <svg class="pc-icon">
                       <use xlink:href="#custom-moon"></use>
                     </svg>
@@ -1534,7 +1569,9 @@
                     data-bs-toggle="tooltip"
                     title="Automatically sets the theme based on user's operating system's color scheme."
                   >
-                    <span class="pc-lay-icon d-flex align-items-center justify-content-center">
+                    <span
+                      class="pc-lay-icon d-flex align-items-center justify-content-center"
+                    >
                       <i class="ph-duotone ph-cpu"></i>
                     </span>
                   </button>
@@ -1544,8 +1581,8 @@
           </div>
         </li>
         <li class="list-group-item">
-          <h6 class="mb-1">Theme Contrast</h6>
-          <p class="text-muted text-sm">Choose theme contrast</p>
+          <h6 class="mb-1">Chế Độ Tương Phản</h6>
+          <p class="text-muted text-sm">Chọn Chế Độ Tương Phản</p>
           <div class="row theme-contrast">
             <div class="col-6">
               <div class="d-grid">
@@ -1580,45 +1617,152 @@
           </div>
         </li>
         <li class="list-group-item">
-          <h6 class="mb-1">Custom Theme</h6>
-          <p class="text-muted text-sm">Choose your primary theme color</p>
+          <h6 class="mb-1">Chế độ tùy chỉnh</h6>
+          <p class="text-muted text-sm">Chọn chủ đề màu ưu tiên của bạn</p>
           <div class="theme-color preset-color">
-            <a href="#!" data-bs-toggle="tooltip" title="Blue" class="active" data-value="preset-1"><i class="ti ti-checks"></i></a>
-            <a href="#!" data-bs-toggle="tooltip" title="Indigo" data-value="preset-2"><i class="ti ti-checks"></i></a>
-            <a href="#!" data-bs-toggle="tooltip" title="Purple" data-value="preset-3"><i class="ti ti-checks"></i></a>
-            <a href="#!" data-bs-toggle="tooltip" title="Pink" data-value="preset-4"><i class="ti ti-checks"></i></a>
-            <a href="#!" data-bs-toggle="tooltip" title="Red" data-value="preset-5"><i class="ti ti-checks"></i></a>
-            <a href="#!" data-bs-toggle="tooltip" title="Orange" data-value="preset-6"><i class="ti ti-checks"></i></a>
-            <a href="#!" data-bs-toggle="tooltip" title="Yellow" data-value="preset-7"><i class="ti ti-checks"></i></a>
-            <a href="#!" data-bs-toggle="tooltip" title="Green" data-value="preset-8"><i class="ti ti-checks"></i></a>
-            <a href="#!" data-bs-toggle="tooltip" title="Teal" data-value="preset-9"><i class="ti ti-checks"></i></a>
-            <a href="#!" data-bs-toggle="tooltip" title="Cyan" data-value="preset-10"><i class="ti ti-checks"></i></a>
+            <a
+              href="#!"
+              data-bs-toggle="tooltip"
+              title="Blue"
+              class="active"
+              data-value="preset-1"
+              ><i class="ti ti-checks"></i
+            ></a>
+            <a
+              href="#!"
+              data-bs-toggle="tooltip"
+              title="Indigo"
+              data-value="preset-2"
+              ><i class="ti ti-checks"></i
+            ></a>
+            <a
+              href="#!"
+              data-bs-toggle="tooltip"
+              title="Purple"
+              data-value="preset-3"
+              ><i class="ti ti-checks"></i
+            ></a>
+            <a
+              href="#!"
+              data-bs-toggle="tooltip"
+              title="Pink"
+              data-value="preset-4"
+              ><i class="ti ti-checks"></i
+            ></a>
+            <a
+              href="#!"
+              data-bs-toggle="tooltip"
+              title="Red"
+              data-value="preset-5"
+              ><i class="ti ti-checks"></i
+            ></a>
+            <a
+              href="#!"
+              data-bs-toggle="tooltip"
+              title="Orange"
+              data-value="preset-6"
+              ><i class="ti ti-checks"></i
+            ></a>
+            <a
+              href="#!"
+              data-bs-toggle="tooltip"
+              title="Yellow"
+              data-value="preset-7"
+              ><i class="ti ti-checks"></i
+            ></a>
+            <a
+              href="#!"
+              data-bs-toggle="tooltip"
+              title="Green"
+              data-value="preset-8"
+              ><i class="ti ti-checks"></i
+            ></a>
+            <a
+              href="#!"
+              data-bs-toggle="tooltip"
+              title="Teal"
+              data-value="preset-9"
+              ><i class="ti ti-checks"></i
+            ></a>
+            <a
+              href="#!"
+              data-bs-toggle="tooltip"
+              title="Cyan"
+              data-value="preset-10"
+              ><i class="ti ti-checks"></i
+            ></a>
           </div>
         </li>
         <li class="list-group-item">
-          <h6 class="mb-1">Theme layout</h6>
-          <p class="text-muted text-sm">Choose your layout</p>
+          <h6 class="mb-1">Bố Cục Chủ Đề</h6>
+          <p class="text-muted text-sm">Chọn Bố Cục Chủ Đề</p>
           <div class="theme-main-layout d-flex align-center gap-1 w-100">
-            <a href="#!" data-bs-toggle="tooltip" title="Vertical" class="active" data-value="vertical">
-              <img src="../assets/images/customizer/caption-on.svg" alt="img" class="img-fluid" />
+            <a
+              href="#!"
+              data-bs-toggle="tooltip"
+              title="Vertical"
+              class="active"
+              data-value="vertical"
+            >
+              <img
+                src="../assets/images/customizer/caption-on.svg"
+                alt="img"
+                class="img-fluid"
+              />
             </a>
-            <a href="#!" data-bs-toggle="tooltip" title="Horizontal" data-value="horizontal">
-              <img src="../assets/images/customizer/horizontal.svg" alt="img" class="img-fluid" />
+            <a
+              href="#!"
+              data-bs-toggle="tooltip"
+              title="Horizontal"
+              data-value="horizontal"
+            >
+              <img
+                src="../assets/images/customizer/horizontal.svg"
+                alt="img"
+                class="img-fluid"
+              />
             </a>
-            <a href="#!" data-bs-toggle="tooltip" title="Color Header" data-value="color-header">
-              <img src="../assets/images/customizer/color-header.svg" alt="img" class="img-fluid" />
+            <a
+              href="#!"
+              data-bs-toggle="tooltip"
+              title="Color Header"
+              data-value="color-header"
+            >
+              <img
+                src="../assets/images/customizer/color-header.svg"
+                alt="img"
+                class="img-fluid"
+              />
             </a>
-            <a href="#!" data-bs-toggle="tooltip" title="Compact" data-value="compact">
-              <img src="../assets/images/customizer/compact.svg" alt="img" class="img-fluid" />
+            <a
+              href="#!"
+              data-bs-toggle="tooltip"
+              title="Compact"
+              data-value="compact"
+            >
+              <img
+                src="../assets/images/customizer/compact.svg"
+                alt="img"
+                class="img-fluid"
+              />
             </a>
-            <a href="#!" data-bs-toggle="tooltip" title="Tab" data-value="tab">
-              <img src="../assets/images/customizer/tab.svg" alt="img" class="img-fluid" />
+            <a
+              href="#!"
+              data-bs-toggle="tooltip"
+              title="Tab"
+              data-value="tab"
+            >
+              <img
+                src="../assets/images/customizer/tab.svg"
+                alt="img"
+                class="img-fluid"
+              />
             </a>
           </div>
         </li>
         <li class="list-group-item">
-          <h6 class="mb-1">Sidebar Caption</h6>
-          <p class="text-muted text-sm">Sidebar Caption Hide/Show</p>
+          <h6 class="mb-1">Chú Thích Thanh Bên</h6>
+          <p class="text-muted text-sm">Chú Thích Thanh Bên Ẩn/Hiện</p>
           <div class="row theme-color theme-nav-caption">
             <div class="col-6">
               <div class="d-grid">
@@ -1629,7 +1773,11 @@
                   data-bs-toggle="tooltip"
                   title="Caption Show"
                 >
-                  <img src="../assets/images/customizer/caption-on.svg" alt="img" class="img-fluid" />
+                  <img
+                    src="../assets/images/customizer/caption-on.svg"
+                    alt="img"
+                    class="img-fluid"
+                  />
                 </button>
               </div>
             </div>
@@ -1642,7 +1790,11 @@
                   data-bs-toggle="tooltip"
                   title="Caption Hide"
                 >
-                  <img src="../assets/images/customizer/caption-off.svg" alt="img" class="img-fluid" />
+                  <img
+                    src="../assets/images/customizer/caption-off.svg"
+                    alt="img"
+                    class="img-fluid"
+                  />
                 </button>
               </div>
             </div>
@@ -1650,7 +1802,7 @@
         </li>
         <li class="list-group-item">
           <div class="pc-rtl">
-            <h6 class="mb-1">Theme Layout</h6>
+            <h6 class="mb-1">Bố Cục Chủ Đề 2</h6>
             <p class="text-muted text-sm">LTR/RTL</p>
             <div class="row theme-color theme-direction">
               <div class="col-6">
@@ -1662,7 +1814,11 @@
                     data-bs-toggle="tooltip"
                     title="LTR"
                   >
-                    <img src="../assets/images/customizer/ltr.svg" alt="img" class="img-fluid" />
+                    <img
+                      src="../assets/images/customizer/ltr.svg"
+                      alt="img"
+                      class="img-fluid"
+                    />
                   </button>
                 </div>
               </div>
@@ -1675,7 +1831,11 @@
                     data-bs-toggle="tooltip"
                     title="RTL"
                   >
-                    <img src="../assets/images/customizer/rtl.svg" alt="img" class="img-fluid" />
+                    <img
+                      src="../assets/images/customizer/rtl.svg"
+                      alt="img"
+                      class="img-fluid"
+                    />
                   </button>
                 </div>
               </div>
@@ -1684,8 +1844,10 @@
         </li>
         <li class="list-group-item pc-box-width">
           <div class="pc-container-width">
-            <h6 class="mb-1">Layout Width</h6>
-            <p class="text-muted text-sm">Choose Full or Container Layout</p>
+            <h6 class="mb-1">Chiều Rộng Bố Cục</h6>
+            <p class="text-muted text-sm">
+              Chọn Bố Cục Đầy Đủ Hay Vùng Chứa
+            </p>
             <div class="row theme-color theme-container">
               <div class="col-6">
                 <div class="d-grid">
@@ -1696,7 +1858,11 @@
                     data-bs-toggle="tooltip"
                     title="Full Width"
                   >
-                    <img src="../assets/images/customizer/full.svg" alt="img" class="img-fluid" />
+                    <img
+                      src="../assets/images/customizer/full.svg"
+                      alt="img"
+                      class="img-fluid"
+                    />
                   </button>
                 </div>
               </div>
@@ -1709,7 +1875,11 @@
                     data-bs-toggle="tooltip"
                     title="Fixed Width"
                   >
-                    <img src="../assets/images/customizer/fixed.svg" alt="img" class="img-fluid" />
+                    <img
+                      src="../assets/images/customizer/fixed.svg"
+                      alt="img"
+                      class="img-fluid"
+                    />
                   </button>
                 </div>
               </div>
@@ -1718,14 +1888,15 @@
         </li>
         <li class="list-group-item">
           <div class="d-grid">
-            <button class="btn btn-light-danger" id="layoutreset">Reset Layout</button>
+            <button class="btn btn-light-danger" id="layoutreset">
+              Đặt Lại Bố Cục
+            </button>
           </div>
         </li>
       </ul>
     </div>
   </div>
 </div>
-
-  </body>
-  <!-- [Body] end -->
+</body>
+<!-- [Body] end -->
 </html>
