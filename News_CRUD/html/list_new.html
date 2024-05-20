@@ -958,13 +958,14 @@
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item"><a href="../dashboard/index.html">Trang Chủ</a></li>
                   <li class="breadcrumb-item"><a href="javascript: void(0)">Quản Lí Bài Đăng</a></li>
-                  <li class="breadcrumb-item" aria-current="page">Danh Sách Bài Đăng</li>
                 </ul>
               </div>
               <div class="col-md-12">
                 <div class="page-header-title">
-                  <h2 class="mb-0">Quản Lí Danh Sách Bài Đăng</h2>
+                  <h2 class="mb-0">Danh Sách Bài Đăng</h2>
+                  <button type="button" class="btn btn-primary mb-4" onclick="navigateToPage('create_new.html')">Thêm Bài Đăng Mới</button>
                 </div>
+
               </div>
             </div>
           </div>
@@ -981,7 +982,7 @@
                 Hôm Nay
                 <span class="text-muted text-sm d-block">09:50</span>
                 <div class="col-lg-6">
-                  <input type"submit" class="btn btn-primary" value="Chỉnh Sửa"> 
+                  <input type"submit" class="btn btn-primary" value="Chỉnh Sửa" onclick="navigateToPage('fix_new.html')"> 
                   <input type"submit" class="btn btn-primary" value="Xóa Bài Đăng">
                 </div>
               </div>
@@ -1011,7 +1012,7 @@ Unordered lists can be started using the toolbar or by typing `* `, `- `, or `+ 
                 Hôm Qua
                 <span class="text-muted text-sm d-block">09:50</span>
                 <div class="col-lg-6">
-                  <input type"submit" class="btn btn-primary" value="Chỉnh Sửa"> 
+                  <input type"submit" class="btn btn-primary" value="Chỉnh Sửa" onclick="navigateToPage('fix_new.html')"> 
                   <input type"submit" class="btn btn-primary" value="Xóa Bài Đăng">
                 </div>
               </div>
@@ -1067,6 +1068,12 @@ You can also choose to hide the statusbar and/or toolbar for a simple and clean 
 <script src="../assets/js/fonts/custom-font.js"></script>
 <script src="../assets/js/pcoded.js"></script>
 <script src="../assets/js/plugins/feather.min.js"></script>
+
+<script>
+  function navigateToPage(pageUrl) {
+      window.location.href = pageUrl;
+  }
+</script>
 
 <script>
   layout_change('false');
