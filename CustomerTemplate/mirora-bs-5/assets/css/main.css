@@ -217,7 +217,7 @@ body {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 p:last-child {
   margin-bottom: 0;
@@ -253,6 +253,7 @@ ul {
 }
 
 img {
+  margin: 3rem;
   max-width: 100%;
 }
 
@@ -1841,6 +1842,7 @@ Corporate
 }
 
 .mb--40 {
+  margin-top: 3rem;
   margin-bottom: 4rem !important;
 }
 
@@ -3377,6 +3379,13 @@ Corporate
   text-transform: capitalize;
   margin-bottom: 2rem;
 }
+.footer-widget .widget-title-1 {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
 @media (max-width: 47.94em) {
   .footer-widget .widget-title {
     margin-bottom: 1.5rem;
