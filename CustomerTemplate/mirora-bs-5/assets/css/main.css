@@ -2916,7 +2916,6 @@ Corporate
   }
 }
 .header-middle {
-  padding: 3.6rem 0;
   border-bottom: 1px solid #2d2d2d;
 }
 @media (max-width: 61.94em) {
@@ -2965,6 +2964,7 @@ Corporate
   display: inline-block;
 }
 .header-toolbar-icons li .bordered-icon {
+  margin-left: 2rem;
   min-width: 4.5rem;
   height: 4.5rem;
   line-height: 4.3rem;
