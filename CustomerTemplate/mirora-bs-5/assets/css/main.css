@@ -1,5 +1,9 @@
 /******************************
 
+
+
+
+
 INDEX:
 
     00 - Base - Global
@@ -48,6 +52,46 @@ INDEX:
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Prata");
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700");
+
+/*Add thêm cọt*/
+
+.table-container {
+  width: 80%;
+  margin: 0 auto;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  margin-bottom: 50px;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Times New Roman', Times, serif;
+}
+strong{
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Times New Roman', Times, serif;
+  color: #ededed;
+}
+th, td {
+  border: 0.5px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  color: #ededed;
+  font-size: larger;
+}
+
+th {
+  background-color: #a8741a;
+  font-weight: bold;
+}
+
+
+
+
+
+
 /*****************************
 00. Global CSS
 *****************************/
@@ -488,7 +532,7 @@ button {
   }
 }
 .breadcrumb-area .page-title {
-  font-size: 4.8rem;
+  font-size: 4rem;
   text-transform: capitalize;
 }
 @media (max-width: 47.94em) {
@@ -3160,7 +3204,7 @@ Corporate
 }
 
 .sticky-header {
-  /*position: fixed !important;*/
+  position: fixed !important;
   top: 0;
   left: 0;
   width: 100%;
@@ -3666,15 +3710,24 @@ Corporate
   padding-left: 0;
 }
 .mainmenu__item > a {
-  padding: 2rem 2.2rem;
+  padding: 1rem 1.1rem;
   color: #fff;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
   text-transform: capitalize;
   font-weight: 400;
   display: block;
   font-family: "Prata", sans-serif;
 }
+.mainmenu__item > a strong {
+  padding: 1rem 0rem;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 400;
+  font-family: "Prata", sans-serif;
+}
+
 .mainmenu__item.menu-item-has-children > a {
   position: relative;
 }
@@ -4448,6 +4501,19 @@ Vertical Menu
   margin-bottom: 3px;
   margin-top: 0;
 }
+.homepage-slider .single-slider .slider-content h1 strong {
+  text-transform: capitalize;
+  font-size: 13rem;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  text-shadow:
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,  
+    -2px 2px 0 #000,  
+    2px 2px 0 #000;   
+}
+
 @media (max-width: 74.9375em) {
   .homepage-slider .single-slider .slider-content h1 {
     font-size: 5rem;
