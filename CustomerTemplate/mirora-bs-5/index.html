@@ -158,7 +158,7 @@
                                                     <div class="mini-cart__item">
                                                         <div class="mini-cart__item--single">
                                                             <div class="mini-cart__item--image">
-                                                                <img src="assets/img/products/1-1-450x450.jpg" alt="product">
+                                                                <img src="assets/img/pic_product/giohang/kim-cuong-3.9.png" alt="product">
                                                             </div>
                                                             <div class="mini-cart__item--content">
                                                                 <h4 class="mini-cart__item--name"><a href="product-details.html">Kim Cương 3ly9<br>-<small>D</small><br>-<small>VVS1</small></a> </a> </h4>
@@ -169,7 +169,7 @@
                                                         </div>
                                                         <div class="mini-cart__item--single">
                                                             <div class="mini-cart__item--image">
-                                                                <img src="assets/img/products/2-2-450x450.jpg" alt="product">
+                                                                <img src="assets/img/pic_product/giohang/4ly1.png" alt="product">
                                                             </div>
                                                             <div class="mini-cart__item--content">
                                                                 <h4 class="mini-cart__item--name"><a href="product-details.html">Kim Cương Tự Nhiên 4ly1<br>-<small>D</small><br>-<small>VVS1</small></a> </h4>
@@ -3278,6 +3278,18 @@
                 });
             }
         </script>
+
+<script>
+    document.querySelector('.search-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const query = document.querySelector('#search').value;
+        if(query) {
+            window.location.href = `search-result.html?query=${encodeURIComponent(query)}`;
+        }
+    });
+</script>
+
 </body>
 
 </html>
