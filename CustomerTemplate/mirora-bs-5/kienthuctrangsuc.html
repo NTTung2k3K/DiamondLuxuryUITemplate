@@ -128,14 +128,14 @@
                             </div>
                         </div>
                         <div class="col-lg-2 col-12 order-lg-2 order-1 text-center">
-                            <a href="index.html" class="logo-box mb-md--30">
+                            <a href="trangchu.html" class="logo-box mb-md--30">
                                 <img src="assets/img/LOGO.png" alt="logo">
                             </a>
                         </div>
                         <div class="col-lg-5 col-md-7 col-sm-6 order-lg-3 order-3">
                             <div class="header-toolbar">
                                 <div class="search-form-wrapper search-hide">
-                                    <form action="search-result.html" class="search-form" method="GET">
+                                    <form action="timkiem.html" class="search-form" method="GET" onsubmit="return checkSearchQuery()">
                                         <input type="text" name="query" id="search" class="search-form__input" placeholder="Tìm Kiếm">
                                         <button type="submit" class="search-form__submit">
                                             <i class="icon_search"></i>
@@ -151,7 +151,7 @@
                                             <a class="mini-cart__dropdown-toggle bordered-icon" id="cartDropdown">
                                                 <span class="mini-cart__count">0</span>
                                                 <i class="icon_cart_alt mini-cart__icon"></i>
-                                                <span class="mini-cart__ammount">80.00 <i class="fa fa-angle-down"></i></span>
+                                                <span class="mini-cart__ammount">Chi Tiết <i class="fa fa-angle-down"></i></span>
                                             </a>
                                             <div class="mini-cart__dropdown-menu">
                                                 <div class="mini-cart__content" id="miniCart">
@@ -161,7 +161,7 @@
                                                                 <img src="assets/img/pic_product/giohang/kim-cuong-3.9.png" alt="product">
                                                             </div>
                                                             <div class="mini-cart__item--content">
-                                                                <h4 class="mini-cart__item--name"><a href="product-details.html">Kim Cương 3ly9<br>-<small>D</small><br>-<small>VVS1</small></a> </a> </h4>
+                                                                <h4 class="mini-cart__item--name"><a href="product- .html">Kim Cương 3ly9<br>-<small>D</small><br>-<small>VVS1</small></a> </a> </h4>
                                                                 <p class="mini-cart__item--quantity">x1</p>
                                                                 <p class="mini-cart__item--price">11.500.000đ</p>
                                                             </div>
@@ -198,7 +198,7 @@
                                                         </p>
                                                     </div>
                                                     <div class="mini-cart__btn">
-                                                        <a href="cart.html" class="btn btn-fullwidth btn-style-1">Xem Giỏ Hàng</a>
+                                                        <a href="gioHang.html" class="btn btn-fullwidth btn-style-1">Xem Giỏ Hàng</a>
                                                         <a href="checkout.html" class="btn btn-fullwidth btn-style-1">Thanh Toán</a>
                                                     </div>
                                                 </div>
@@ -218,65 +218,76 @@
                             <nav class="main-navigation">
                                 <ul class="mainmenu col-12">
                                     <li class="mainmenu__item active">
-                                        <a href="index.html" class="mainmenu__link">Trang Chủ</a>
+                                        <a href="trangchu.html" class="mainmenu__link">Trang Chủ</a>
                                     </li>
                                     <li class="mainmenu__item menu-item-has-children has-children">
-                                        <a href="index.html" class="mainmenu__link">Kim Cương</a>
+                                        <a href="#" class="mainmenu__link">Kim Cương</a>
                                         <ul class="sub-menu">
-                                            <li><a href="index.html">Kim Cương Tự Nhiên</a></li>
-                                            <li><a href="index-2.html">Kim Cương Nhân Tạo</a></li>
+                                            <li><a href="#">Kim Cương Tự Nhiên</a></li>
+                                            <li><a href="#">Kim Cương Nhân Tạo</a></li>
                                         </ul>
                                     </li>
                                     <li class="mainmenu__item menu-item-has-children">
-                                        <a href="shop.html" class="mainmenu__link">Trang Sức Kim Cương</a>
-                                        <ul class="megamenu five-column">
+                                        <a href="TrangSucKC.html" class="mainmenu__link">Trang Sức Kim Cương</a>
+                                        <ul class="megamenu three-column">
                                             <li>
-                                                <a class="megamenu-title" href="#">Nhẫn Kim Cương</a>
+                                                <a class="megamenu-title" href="NhanKimCuong.html">Nhẫn Kim Cương</a>
                                                 <ul>
                                                     <li>
-                                                        <a href="shop.html">Nhẫn Kim Cương Nam</a>
+                                                        <a href="NhanKimCuongNam.html">Nhẫn Kim Cương Nam</a>
                                                     </li>
                                                     <li>
-                                                        <a href="shop-right-sidebar.html">Nhẫn Kim Cương Nữ</a>
+                                                        <a href="NhanKimCuongNu.html">Nhẫn Kim Cương Nữ</a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a class="megamenu-title" href="#">Vòng Tay Kim Cương</a>
-                                                <a class="megamenu-title" href="#">Lắc Tay Kim Cương</a>
+                                                <a class="megamenu-title" href="VongTayKimCuong.html">Vòng Tay Kim Cương</a>
+                                                <a class="megamenu-title" href="LacTayKimCuong copy.html">Lắc Tay Kim Cương</a>
                                             </li>
                                             <li>
-                                                <a class="megamenu-title" href="#">Hoa Tai Kim Cương</a>
-                                                <a class="megamenu-title" href="#">Mặt Dây Chuyền KC</a>
+                                                <a class="megamenu-title" href="HoaTayKimCuong.html">Hoa Tai Kim Cương</a>
+                                                <a class="megamenu-title" href="MatDayChuyenKimCuong.html">Mặt Dây Chuyền KC</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="mainmenu__item menu-item-has-children">
+                                        <a href="trangsuccuoi.html" class="mainmenu__link">Trang Sức Cưới</a>
+                                        <ul class="megamenu">
+                                            <li>
+                                                <a class="megamenu-title" href="nhanCuoiKimCuong.html">Nhẫn Cưới Kim Cương</a>
+                                            </li>
+                                            <li>
+                                                <a class="megamenu-title" href="nhanKCcauhon.html">Nhẫn Kim Cương Cầu Hôn</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="mainmenu__item menu-item-has-children has-children">
-                                        <a href="blog.html" class="mainmenu__link">Bộ Sưu Tập</a>
+                                        <a href="BoSuuTap.html" class="mainmenu__link">Bộ Sưu Tập</a>
                                         <ul class="sub-menu">
                                             <li class="menu-item-has-children has-children">
-                                                <a href="#">BST Quý Ông</a>
+                                                <a href="BoSuuTapQuyOng.html">BST Quý Ông</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="blog.html">Đẳng Cấp & Uy Quyền</a></li>
-                                                    <li><a href="blog-right-sidebar.html">Sang Trọng Và Bản Lĩnh</a></li>
-                                                    <li><a href="blog-3-column.html">Phong Thủy Và Thành Công</a></li>
-                                                    <li><a href="blog-4-column.html">Phong Cách Và Thời Trang</a></li>
+                                                    <li><a href="DangCapUyQuyen.html">Đẳng Cấp & Uy Quyền</a></li>
+                                                    <li><a href="SangTrongBanLinh.html">Sang Trọng Và Bản Lĩnh</a></li>
+                                                    <li><a href="PhongThuyThanhCong.html">Phong Thủy Và Thành Công</a></li>
+                                                    <li><a href="PhongCachThoiTrang.html">Phong Cách Và Thời Trang</a></li>
                                                 </ul>
                                             </li>
                                             <li class="menu-item-has-children has-children">
-                                                <a href="#">BST Nhẫn Cưới</a>
+                                                <a href="BosuuTapNhanCuoi.html">BST Nhẫn Cưới</a>
                                             </li>
                                             <li class="menu-item-has-children has-children">
-                                                <a href="#">BST Nhẫn Cầu Hôn</a>
+                                                <a href="BosuuTapNhanCauHon.html">BST Nhẫn Cầu Hôn</a>
                                             </li>
                                             <li class="menu-item-has-children has-children">
-                                                <a href="#">BST Dây Chuyền</a>
+                                                <a href="BosuuTapDayChuyen.html">BST Dây Chuyền</a>
                                             </li>
                                             <li class="menu-item-has-children has-children">
-                                                <a href="#">BST Kim Cương</a>
+                                                <a href="BosuuTapKimCuong.html">BST Kim Cương</a>
                                             </li>
                                             <li class="menu-item-has-children has-children">
-                                                <a href="#">BST Bán Chạy Nhất</a>
+                                                <a href="BosuuTapBanChayNhat.html">BST Bán Chạy Nhất</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -284,42 +295,43 @@
                                         <a href="banggiakimcuong.html" class="mainmenu__link">Bảng Giá Kim Cương</a>
                                     </li>
                                     <li class="mainmenu__item menu-item-has-children has-children">
-                                        <a href="blog.html" class="mainmenu__link">Kiến Thức</a>
+                                        <a class="mainmenu__link" href="#">Kiến Thức</a>
                                         <ul class="sub-menu">
                                             <li class="menu-item-has-children has-children">
-                                                <a href="#">Kiến Thức Kim Cương</a>
+                                                <a href="kienthuckimcuong.html">Kiến Thức Kim Cương</a>
                                             </li>
                                             <li class="menu-item-has-children has-children">
-                                                <a href="#">Kiến Thức Trang Sức</a>
+                                                <a href="kienthuctrangsuc.html">Kiến Thức Trang Sức</a>
                                             </li>
                                             <li class="menu-item-has-children has-children">
-                                                <a href="#">Hướng Dẫn Chọn Ni</a>
+                                                <a>Hướng Dẫn Chọn Ni</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item-has-children has-children">
-                                                        <a href="#">Hướng Dẫn Đo Ni Vòng</a>
+                                                        <a href="huongdandovongtay.html">Hướng Dẫn Đo Vòng Tay</a>
                                                     </li>
                                                     <li class="menu-item-has-children has-children">
-                                                        <a href="#">Hướng Dẫn Đo Ni Nhẫn</a>
+                                                        <a href="huongdandoninhan.html">Hướng Dẫn Đo Ni Nhẫn</a>
+                                                    </li>
+                                                    <li class="menu-item-has-children has-children">
+                                                        <a href="huongdandodaychuyen.html">Hướng Dẫn Đo Dây Chuyền</a>
                                                     </li>
                                                 </ul>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="mainmenu__item">
-                                        <a href="about.html" class="mainmenu__link">Các Câu hỏi Thường Gặp</a>
-                                    </li>
                                     <li class="mainmenu__item menu-item-has-children has-children">
                                         <a href="#" class="mainmenu__link">Thông Tin</a>
                                         <ul class="sub-menu">
-                                            <li><a href="cart.html">Thông Tin Khuyến Mãi</a></li>
-                                            <li><a href="checkout.html">Tin Tức</a></li>
+                                            <li><a href="ThongTinKhuyenMai.html">Thông Tin Khuyến Mãi</a></li>
+                                            <li><a href="TinTuc.html">Tin Tức</a></li>
+                                            <li><a href="CauHoiThuongGap.html">Các Câu Hỏi Thường Gặp</a></li>
                                         </ul>
                                     </li>
                                     <li class="mainmenu__item">
-                                        <a href="about.html" class="mainmenu__link">Giới Thiệu</a>
+                                        <a href="gioithieu.html" class="mainmenu__link">Giới Thiệu</a>
                                     </li>
                                     <li class="mainmenu__item">
-                                        <a href="contact.html" class="mainmenu__link">Liên Hệ</a>
+                                        <a href="lienhe.html" class="mainmenu__link">Liên Hệ</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -336,7 +348,7 @@
         <!-- Header Area End -->
 
         <!-- Breadcumb area Start -->
-        <div class="breadcrumb-area">
+        <div class="breadcrumb-area" style="background-color: black;">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
@@ -353,7 +365,7 @@
         <!-- Breadcumb area End -->
 
         <!-- Main Wrapper Start -->
-        <div class="main-content-wrapper">
+        <div class="main-content-wrapper" style="background-color: black;">
             <div class="blog-area pt--40 pb--80 pt-md--30 pb-md--60">
                 <div class="container">
                     <div class="row">
@@ -525,17 +537,19 @@
 
         <!-- Footer Start -->
         <footer class="footer border-top ptb--40 ptb-md--30">
-            <div class="container text-center">
+            <div class="container">
                 <div class="row mb--40 mb-md--30">
-                    <div class="col-lg-4 col-md-6 mb-md--30">
+                    <div class="col-lg-3 col-md-6 mb-md--30">
                         <div class="footer-widget">
                             <h3 class="widget-title">Về Diamond Luxury</h3>
-                            <div class="widget-content mb--20">
-                                <p>Address: Vinhomes Grand Park <br> Q. Thủ Đức</p>
-                                <p>Số Điện Thoại: (012) 800 456 789</p>
-                                <p>Email: diamondluxuryservice@gmail.com</p>
-                            </div>
+                            <ul class="widget-menu">
+                                <li>Address: Vinhomes Grand Park <br> Q. Thủ Đức</li>
+                                <li>Số Điện Thoại: (012) 800 456 789</li>
+                                <li>Email: diamondluxuryservice@gmail.com</li>
+                            </ul>
+                            <br>
                             <ul class="social social-round">
+                                <h3 class="widget-title">Theo Dõi Chúng Tôi</h3>
                                 <li class="social__item">
                                     <a class="social__link"  href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                                         <i class="fa fa-facebook"></i>
@@ -559,33 +573,34 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-6 mb-md--30">
+                    <div class="col-lg-3 col-md-6 mb-md--30">
                         <div class="footer-widget">
-                            <h3 class="widget-title">Thông Tin</h3>
+                            <h3 class="widget-title">Thông Tin Công Ty</h3>
                             <ul class="widget-menu">
-                                <li><a href="">Về Chúng Tôi</a></li>
-                                <li><a href="">Thông Tin Giao Hàng</a></li>
-                                <li><a href="">Chính Sách Bảo Mật</a></li>
-                                <li><a href="">Điều Khoản &amp; Điều Kiên</a></li>
-                                <li><a href="">Phiếu Quà Tặng</a></li>
-                                <li><a href="">Liên Hệ</a></li>
+                                <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                                <li><a href="CauHoiThuongGap.html">Câu Hỏi Thường Gặp</a></li>
+                                <li><a href="banggiakimcuong.html">Bảng Giá Kim Cương</a></li>
+                                <li><a href="huongdandoninhan.html">Hướng dẫn đo size: Nhẫn kim cương</a></li>
+                                <li><a href="huongdandodaychuyen.html">Hướng dẫn đo size: Dây chuyền</a></li>
+                                <li><a href="huongdandovongtay.html">Hướng dẫn đo size: Lắc & vòng tay</a></li>  
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-6 mb-sm--30">
+                    <div class="col-lg-3 col-md-6 mb-md--30">
                         <div class="footer-widget">
-                            <h3 class="widget-title">Tiện Ích Bổ Sung</h3>
+                            <h3 class="widget-title">Chính Sách Liên Quan</h3>
                             <ul class="widget-menu">
-                                <li><a href="">Hãng</a></li>
-                                <li><a href="">Phiếu Quà Tặng</a></li>
-                                <li><a href="">Liên Kết</a></li>
-                                <li><a href="">Khuyến Mãi</a></li>
-                                <li><a href="">Tài Khoản Của Tôi</a></li>
-                                <li><a href="">Trở Lại</a></li>
+                                <li><a href="ChinhSachBaoHanh.html">Chính Sách Bảo Hành</a></li>
+                                <li><a href="ChinhSachBaoMat.html">Chính Sách Bảo Mật</a></li>
+                                <li><a href="ChinhSachDoiTra.html">Chính Sách Đổi Trả</a></li>
+                                <li><a href="DieuKhoanSuDung.html">Điều Khoản &amp; Điều Kiện</a></li>
+                                <li><a href="PhieuQuaTang.html">Phiếu Quà Tặng</a></li>
+                                <li><a href="ThongTinKhuyenMai.html">Khuyến Mãi</a></li>  
+                                <li><a href="lienhe.html">Liên Hệ</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-3 col-md-6">
                         <div class="footer-widget">
                             <h3 class="widget-title">Vị Trí Của Chúng Tôi</h3>
                             <div id="google-map" style="width:100%;height:200px;"></div>
@@ -595,20 +610,13 @@
                 <div class="row mb--40 mb-md--30">
                     <div class="col-12">
                         <ul class="footer-menu text-center">
-                            <li><a href="">Trang Chủ</a></li>
-                            <li><a href="">Mua </a></li>
-                            <li><a href="">Khuyến Mãi</a></li>
-                            <li><a href="">Chính Sách Bảo Mật</a></li>
-                            <li><a href="">Chính Sách Người Dùng</a></li>
-                            <li><a href="">Sơ Đồ Trang Web</a></li>
-                            <li><a href="">Hỗ Trợ</a></li>
-                            <li><a href="">Liên Hệ</a></li>
+                            <li><a>"Tinh hoa của sự lấp lánh: Nơi bạn tìm thấy sự hoàn hảo trong từng viên kim cương."</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 text-center">
-                        <p class="copyright-text">&copy; Bản Quyền <i class="fa fa-heart"></i> Của  <a href="https://hasthemes.com">DiamondBoiz</a> </p>
+                        <p class="copyright-text">&copy; Bản Quyền <i class="fa fa-heart"></i> Của DiamondBoiz</a> </p>
                         <img src="assets/img/others/payment.png" alt="payment">
                     </div>
                 </div>
@@ -640,134 +648,31 @@
         </div>
         <!-- Popup Subscribe Box End -->
 
-        <!-- Modal Start -->
-        <!--<div class="modal fade product-modal" id="productModal" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">Đóng</span>
-                </button>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-6 mb-sm--20">
-                            <div class="tab-content product-thumb-large">
-                                <div id="thumb1" class="tab-pane active show fade">
-                                    <img src="assets/img/products/1-1-600x600.jpg" alt="product thumb">
-                                </div>
-                                <div id="thumb2" class="tab-pane fade">
-                                    <img src="assets/img/products/2-600x600.jpg" alt="product thumb">
-                                </div>
-                                <div id="thumb3" class="tab-pane fade">
-                                    <img src="assets/img/products/10-600x600.jpg" alt="product thumb">
-                                </div>
-                                <div id="thumb4" class="tab-pane fade">
-                                    <img src="assets/img/products/11-600x600.jpg" alt="product thumb">
-                                </div>
-                                <div id="thumb5" class="tab-pane fade">
-                                    <img src="assets/img/products/12-600x600.jpg" alt="product thumb">
-                                </div>
-                                <div id="thumb6" class="tab-pane fade">
-                                    <img src="assets/img/products/13-600x600.jpg" alt="product thumb">
-                                </div>
-                            </div>
-                            <div class="product-thumbnail">
-                                <div class="thumb-menu" id="modal-thumbmenu">
-                                    <div class="thumb-menu-item">
-                                        <a href="#thumb1" data-bs-toggle="tab" class="nav-link active">
-                                            <img src="assets/img/products/1-1-450x450.jpg" alt="product thumb">
-                                        </a>
-                                    </div>
-                                    <div class="thumb-menu-item">
-                                        <a href="#thumb2" data-bs-toggle="tab" class="nav-link">
-                                            <img src="assets/img/products/2-2-450x450.jpg" alt="product thumb">
-                                        </a>
-                                    </div>
-                                    <div class="thumb-menu-item">
-                                        <a href="#thumb3" data-bs-toggle="tab" class="nav-link">
-                                            <img src="assets/img/products/10-10-450x450.jpg" alt="product thumb">
-                                        </a>
-                                    </div>
-                                    <div class="thumb-menu-item">
-                                        <a href="#thumb4" data-bs-toggle="tab" class="nav-link">
-                                            <img src="assets/img/products/11-11-450x450.jpg" alt="product thumb">
-                                        </a>
-                                    </div>
-                                    <div class="thumb-menu-item">
-                                        <a href="#thumb5" data-bs-toggle="tab" class="nav-link">
-                                            <img src="assets/img/products/12-12-450x450.jpg" alt="product thumb">
-                                        </a>
-                                    </div>
-                                    <div class="thumb-menu-item">
-                                        <a href="#thumb6" data-bs-toggle="tab" class="nav-link">
-                                            <img src="assets/img/products/13-13-450x450.jpg" alt="product thumb">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-7 col-md-6">
-                            <div class="modal-box product">
-                                <h3 class="product-title">Tên Sản Phẩm</h3>
-                                <div class="ratings mb--20">
-                                    <i class="fa fa-star rated"></i>
-                                    <i class="fa fa-star rated"></i>
-                                    <i class="fa fa-star rated"></i>
-                                    <i class="fa fa-star rated"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <ul class="product-detail-list list-unstyled mb--20">
-                                    <li>Hãng: <a href="">Apple</a></li>
-                                    <li>Mã Sản Phẩm: Watches</li>
-                                    <li>Điểm Tích Lũy: 600</li>
-                                    <li>Tình trạng: Còn hàng</li>
-                                </ul>
-                                <div class="product-price border-bottom pb--20 mb--20">
-                                    <span class="regular-price">7.000.000đ</span>
-                                    <span class="sale-price">5.500.000đ</span>
-                                </div>
-                                <div class="product-options mb--20">
-                                    <h3>Tùy Chọn Có Sẵn</h3>
-                                    <div class="form-group">
-                                        <label><sup>*</sup>Đổi Màu</label>
-                                        <select>
-                                            <option> --- Vui Lòng Lựa Chọn --- </option>
-                                            <option>Đen</option>
-                                            <option>Xanh</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="product-action-wrapper mb--20">
-                                    <div class="product-action-top d-flex align-items-center mb--20">
-                                        <div class="quantity">
-                                            <span>Số Lượng: </span>
-                                            <input type="number" class="quantity-input" name="qty" id="qty" value="1" min="1">
-                                        </div>
-                                        <button type="button" class="btn btn-medium btn-style-2 add-to-cart">
-                                            Thêm Vào Giỏ
-                                        </button>
-                                    </div>
-                                    <div class="product-action-bottom">
-                                        <a href="wishlist.html">+Thêm vào Danh Sách Ưu Thích</a>
-                                        <a href="compare.html">+Thêm vào So Sánh</a>
-                                    </div>
-                                </div>  
-                                <p class="product-tags">
-                                    Nhãn: <a href="shop.html">Phong Cách</a>,
-                                    <a href="shop.html">Cá Tính</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>-->
-        <!-- Modal End -->
-
     </div>
     <!-- Main Wrapper End -->
+
+    <script>
+        function checkSearchQuery() {
+            var query = document.getElementById('search').value.trim().toLowerCase();
+            var diamondKeywords = [
+                'kim cương', 'nhẫn kim cương', 'bông tai kim cương', 'vòng cổ kim cương', 
+                'trang sức kim cương', 'diamond', 'ring', 'earrings', 'necklace', 'jewelry'
+            ];
+        
+            // Kiểm tra xem từ khóa có nằm trong danh sách từ khóa liên quan đến kim cương hay không
+            var hasMeaningfulKeyword = diamondKeywords.some(function(keyword) {
+                return query.includes(keyword);
+            });
+        
+            if (hasMeaningfulKeyword) {
+                document.querySelector('.search-form').action = 'timkiem.html';
+            } else {
+                document.querySelector('.search-form').action = 'search_no_results.html';
+            }
+            return true; // Tiếp tục submit form
+        }
+        </script>
+
 
 
         <!-- Google Map -->

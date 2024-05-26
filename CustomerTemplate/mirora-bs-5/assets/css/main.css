@@ -129,7 +129,7 @@ th {
 00. Global CSS
 *****************************/
 :root {
-  --bs-body-color: #afafaf;
+  --bs-body-color: #dee2e6;
   --bs-primary: #a8741a;
   --bs-body-bg: #242424;
   --bs-border-color: #2d2d2d;
@@ -3759,7 +3759,7 @@ Corporate
   padding-left: 0;
 }
 .mainmenu__item > a {
-  padding: 1rem 1.1rem;
+  padding: 1rem 1rem;
   color: #fff;
   font-size: 1.3rem;
   line-height: 2rem;
@@ -3769,12 +3769,13 @@ Corporate
   font-family: "Prata", sans-serif;
 }
 .mainmenu__item > a strong {
-  padding: 1rem 0rem;
+  padding: 0.1rem 0.1rem;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 2rem;
   font-weight: 400;
   font-family: "Prata", sans-serif;
+  border: 2px solid white;
 }
 
 .mainmenu__item.menu-item-has-children > a {
@@ -6360,7 +6361,7 @@ User Dashboard tab
 }
 
 .post {
-  background: #343434;
+  /*background: #343434;*/
   padding: 1.5rem;
 }
 .post-media {
@@ -6368,6 +6369,7 @@ User Dashboard tab
 }
 .post-media .image img {
   width: 100%;
+  border-radius: 10px;
 }
 .post .entry-meta {
   display: -webkit-box;
@@ -6528,7 +6530,7 @@ User Dashboard tab
   width: 100%;
 }
 .post-details .post-title {
-  font-size: 2.4rem;
+  font-size: 3rem;
 }
 
 .single-post {
