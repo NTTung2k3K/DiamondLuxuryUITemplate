@@ -247,7 +247,13 @@ html {
 body {
   overflow-x: hidden;
   overflow-y: auto;
+  font-family: "Arial";
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  color: #ffffff;
+  font-family: "Prata", sans-serif; }
 
 p {
   font-size: 2rem;
@@ -5999,6 +6005,7 @@ User Dashboard tab
   border-radius: 10px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  margin-bottom: 50px;
 }
 .promo__box:before {
   left: 0;
@@ -6020,7 +6027,7 @@ User Dashboard tab
   text-align: left;
   left: 3rem;
   top: auto;
-  bottom: 2.4rem;
+  bottom: 10rem;
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
