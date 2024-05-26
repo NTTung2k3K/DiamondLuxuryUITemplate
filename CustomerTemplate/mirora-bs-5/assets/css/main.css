@@ -89,8 +89,41 @@ th {
 
 
 
+/* Search */
+.row-small>.col, .row-small>.flickity-viewport>.flickity-slider>.col {
+    margin-bottom: 0;
+    padding: 0 9.8px 19.6px;
+}
 
 
+.align-equal>.col {
+  justify-content: space-around;
+  display: flex;
+}
+.child-cat .cat-item a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.child-cat .cat-item {
+  height: 100%;
+}
+
+.child-cat .col-inner {
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+.row-small>.col, .row-small>.flickity-viewport>.flickity-slider>.col {
+  margin-bottom: 0;
+  padding: 0 9.8px 19.6px;
+}
+
+
+*, :after, :before, html {
+  box-sizing: border-box;
+}
 
 /*****************************
 00. Global CSS
@@ -396,7 +429,7 @@ button {
   text-transform: capitalize;
   font-size: 2.4rem;
   font-weight: 500;
-  padding-right: 2rem;
+  padding: 0.5rem;
 }
 @media (max-width: 35.94em) {
   .section-title h2 {
@@ -2775,6 +2808,7 @@ Corporate
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
   border-bottom: 1px solid #2d2d2d;
+  background-color: #333333;
 }
 @media (max-width: 61.94em) {
   .header-top-nav {
@@ -2903,7 +2937,7 @@ Corporate
 .header-text {
   color: #fff;
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 .header-text span {
   color: #a8741a;
@@ -3176,6 +3210,7 @@ Corporate
 }
 .header-bottom {
   border-bottom: 1px solid #2d2d2d;
+  background-color: #333333;
 }
 
 .contact-info {
@@ -5157,12 +5192,14 @@ Nice Select
 }
 .product-img .primary-image {
   margin: 0 auto;
+  border-radius: 10px;
 }
 .product-img .secondary-image {
   left: 50%;
   top: 0;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  border-radius: 10px;
 }
 .product-img-overlay {
   left: 0;
@@ -5664,7 +5701,7 @@ Quick View Modal
   top: -5.8rem;
   background: #242424;
   width: 2rem;
-  text-align: right;
+  text-align: center;
 }
 @media (max-width: 35.94em) {
   .nav-top .slick-btn {
@@ -5959,7 +5996,7 @@ User Dashboard tab
   overflow: hidden;
 }
 .promo__box img {
-  border-radius: 5px;
+  border-radius: 10px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -5974,9 +6011,10 @@ User Dashboard tab
 }
 .promo__box-2 {
   display: block;
+  border-radius: 10px;
 }
 .promo__box-2 img {
-  border-radius: 0;
+  border-radius: 10px;
 }
 .promo__content {
   text-align: left;
@@ -6278,6 +6316,7 @@ User Dashboard tab
 }
 .blog__thumb img {
   width: 100%;
+  border-radius: 15px;
 }
 .blog__meta {
   display: -webkit-box;
@@ -6306,7 +6345,7 @@ User Dashboard tab
 }
 .blog__title a {
   display: block;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.5px;
 }
 .blog .read-more {
   font-weight: 700;
