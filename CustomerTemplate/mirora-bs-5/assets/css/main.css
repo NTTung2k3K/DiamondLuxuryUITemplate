@@ -52,6 +52,57 @@ INDEX:
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Prata");
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700");
+/*search*/
+.searchBox {
+  display: flex;
+  max-width: 350px; /* tăng kích thước tối đa của hộp tìm kiếm */
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #2f3640;
+  border-radius: 50px;
+  position: relative;
+}
+
+.searchButton {
+  color: white;
+  position: absolute;
+  right: 1px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gradient-2, linear-gradient(90deg, #fb9935 0%, #333333 100%));
+  border: 0;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+/* hover effect */
+button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-3px);
+}
+
+/* button pressing effect */
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.searchInput {
+  flex: 1; /* cho phép input mở rộng để chiếm hết không gian có sẵn */
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  padding: 12px 16px; /* giảm padding để không làm input quá cao */
+}
+
+
+
 .quantity-controls1 {
   display: flex;
   align-items: center;
