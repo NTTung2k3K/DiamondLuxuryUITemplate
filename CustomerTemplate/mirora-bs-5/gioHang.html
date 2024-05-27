@@ -404,16 +404,22 @@
                     <!-- Wishlist Area Start -->
                     <div class="wishlist-wrapper bg--2">
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-12" style="
+                            padding: 0px;
+                        ">
                                 <form action="#" class="form form--cart">
                                     <div class="wishlist-table table-content table-responsive">
                                         <table class="table">
                                             <thead>
                                                 <tr>
-                                                    <th style="background-color: aliceblue; color: black;">Sản Phẩm</th>
-                                                    <th style="background-color: aliceblue; color: black;">Tên</th>
-                                                    <th style="background-color: aliceblue; color: black;">Giá</th>
-                                                    <th style="background-color: aliceblue; color: black;">Số Lượng</th>
+                                                    <th style="background-color: rgb(255, 255, 255); color: black;">Sản
+                                                        Phẩm</th>
+                                                    <th style="background-color: rgb(255, 255, 255); color: black;">Tên
+                                                    </th>
+                                                    <th style="background-color: rgb(255, 255, 255); color: black;">Giá
+                                                    </th>
+                                                    <th style="background-color: rgb(252, 254, 255); color: black;">Số
+                                                        Lượng</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -432,8 +438,8 @@
                                                         <div class="quantity-controls">
                                                             <button type="button" class="quantity-decrease"
                                                                 style="font-size: 20px;">-</button>
-                                                            <input type="text" value="1" size="2" readonly
-                                                                style="text-align: center;">
+                                                            <input type="text" class="quantity-input" value="1" size="2"
+                                                                readonly style="text-align: center;">
                                                             <button type="button" class="quantity-increase"
                                                                 style="font-size: 20px;">+</button>
                                                         </div>
@@ -455,11 +461,13 @@
                                                         <div class="quantity-controls">
                                                             <button type="button" class="quantity-decrease"
                                                                 style="font-size: 20px;">-</button>
-                                                            <input type="text" value="1" size="2" readonly
-                                                                style="text-align: center;">
+                                                            <input type="text" class="quantity-input" value="1" size="2"
+                                                                readonly style="text-align: center;">
                                                             <button type="button" class="quantity-increase"
                                                                 style="font-size: 20px;">+</button>
                                                         </div>
+
+
                                                     </td>
                                                     <td><a class="delete" href="#"><i class="fa fa-times"></i></a></td>
                                                 </tr>
@@ -469,9 +477,12 @@
 
                                     <div class="total-cart"
                                         style="text-align: right; font-size: large; margin: 15px; margin-right: 20px;">
-                                        Tổng Giỏ Hàng:
-                                        <span>$56.00</span>
+                                        <div class="total-content"
+                                            style="display: inline-block; border: 2px solid #ffffff; padding: 5px; border-radius: 5px;">
+                                            Tổng Giỏ Hàng: <span>$56.00</span>
+                                        </div>
                                     </div>
+
 
                                 </form>
                             </div>

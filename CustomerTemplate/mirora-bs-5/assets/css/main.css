@@ -52,6 +52,86 @@ INDEX:
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Prata");
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700");
+.quantity-controls1 {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-btn1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Tạo hình dạng hình tròn */
+  font-size: 20px;
+  color: #ffffff; /* Màu chữ */
+  border: 1px solid #fff; /* Border màu trắng */
+  background-color: transparent; /* Đặt màu nền trong suốt */
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+
+
+
+.quantity-input {
+  text-align: center;
+  width: 50px;
+  margin: 0 10px;
+  font-size: 20px;
+  height: 40px;
+}
+
+
+.btn1 {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.btn-border1 {
+  background-color: transparent; /* Màu nền trong suốt */
+  border: 2px solid #fb9935; /* Border màu xanh */
+  color: #ffffff; /* Màu chữ xanh */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-border1:hover {
+  background-color: #333333; /* Màu nền khi hover */
+  color: #fff; /* Màu chữ khi hover */
+  border: 0px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-decrease, .quantity-increase {
+  font-size: 20px;
+  width: 40px; /* Set a fixed width */
+  height: 40px; /* Set a fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none; /* Remove default button borders */
+  background-color: #f0f0f0; /* Background color */
+  cursor: pointer;
+  border-radius: 5px; /* Optional: Rounded corners */
+  margin: 0 5px; /* Space between buttons and input */
+}
+
+.quantity-input {
+  text-align: center;
+  width: 50px; /* Adjust as needed */
+  margin: 0 10px;
+  font-size: 20px;
+  height: 40px; /* Same height as buttons for alignment */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Optional: Rounded corners */
+}
 
 /*Add thêm cọt*/
 
@@ -75,7 +155,7 @@ strong{
   color: #ededed;
 }
 th, td {
-  border: 0.5px solid #ddd;
+  border: 0px solid #ddd;
   padding: 8px;
   text-align: center;
   color: #ededed;
@@ -83,7 +163,7 @@ th, td {
 }
 
 th {
-  background-color: #a8741a;
+  background-color: #98743600;
   font-weight: bold;
 }
 
@@ -6595,7 +6675,7 @@ User Dashboard tab
 }
 .table td h3 a {
   font-weight: 500;
-  color: #afafaf;
+  color: #ffffff;
 }
 .table td a.delete {
   color: #afafaf;
