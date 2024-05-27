@@ -54,6 +54,15 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js" defer></script>
+
+    <style>
+    .success-icon {
+        color: green;
+        font-size: 30px;
+        margin-right: 15px;
+        vertical-align: middle;
+    }
+    </style>
 </head>
 
 <body>
@@ -199,7 +208,7 @@
                                                     </div>
                                                     <div class="mini-cart__btn">
                                                         <a href="gioHang.html" class="btn btn-fullwidth btn-style-1">Xem Giỏ Hàng</a>
-                                                        <a href="checkout.html" class="btn btn-fullwidth btn-style-1">Thanh Toán</a>
+                                                        <a href="thanhtoan.html" class="btn btn-fullwidth btn-style-1">Thanh Toán</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -344,27 +353,83 @@
                     </div>
                 </div>
             </div>
+            
         </header>
         <!-- Header Area End -->
 
 
-<body>
-    <div class="breadcrumb-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="page-title">Đặt Hàng Thành Công</h1>
-                    <div class="text-center" id="orderDetails"></div>
-                    <br>
-                    <button type="submit" class="btn btn-style-3">
-                        <a href="index.html">Tiếp Tục Mua Hàng</a>
-                    </button>
+
+            <div class="container">
+                <div class="row">
+                    
                 </div>
+            </div>
+        
+<body>
+    <div class="main-content-wrapper" style="background-color: black;">
+        <div class="checkout-area pt--20 pb--80 pt-md--30 pb-md--60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 order-success text-center">
+                        <h1>Đặt Hàng Thành Công<i class="fa fa-check-circle success-icon" style="padding: 10px;"></i></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 order-section">
+                        <table class="order-details">
+                            <h2>Thông tin giao hàng của bạn:</h2>
+                            <tr>
+                            <th class="col-lg-3">Họ và Tên</th>
+                        <td id="customer-name"></td>
+                    </tr>
+                    <tr>
+                        <th class="col-lg-3">Địa chỉ</th>
+                        <td id="customer-address"></td>
+                    </tr>
+                    <tr>
+                        <th class="col-lg-3">Mã Zip</th>
+                        <td id="customer-zip"></td>
+                    </tr>
+                    <tr>
+                        <th class="col-lg-3">Số Điện Thoại</th>
+                        <td id="customer-phone"></td>
+                    </tr>
+                    <tr>
+                        <th class="col-lg-3">Email</th>
+                        <td id="customer-email"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-12 order-section">
+                <h2>Thông tin đơn hàng của bạn:</h2>
+                <table class="order-details">
+                    <tr>
+                        <th class="col-lg-3">Sản phẩm</th>
+                        <td id="product-name"></td>
+                    </tr>
+                    <tr>
+                        <th class="col-lg-3">Số lượng</th>
+                        <td id="product-quantity"></td>
+                    </tr>
+                    <tr>
+                        <th class="col-lg-3">Hình Thức Ship</th>
+                        <td id="shipping-method"></td>
+                    </tr>
+                    <tr>
+                        <th class="col-lg-3">Tổng Chi Phí</th>
+                        <td id="total-cost"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row continue-shopping col-lg-3" style="border-radius: 10px;margin: auto;">
+                <button type="submit" class="btn btn-style-3">
+                    <a href="trangchu.html">Tiếp Tục Mua Hàng</a>
+                </button>
             </div>
         </div>
     </div>
-    <!-- Breadcumb area End -->
-
+</div>
+    </div>
 <!-- Footer Start -->
 <footer class="footer border-top ptb--40 ptb-md--30">
     <div class="container">
@@ -774,6 +839,41 @@ function checkSearchQuery() {
                 </tr>
             </table>
         `;
+    }
+</script>
+
+<script>
+    function getQueryParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+            firstname: params.get('first_name'),
+            lastname: params.get('last_name'),
+            city: params.get('city'),
+            district: params.get('district'),
+            address: params.get('address'),
+            apartment: params.get('apartment'),
+            zip: params.get('zip'),
+            phone: params.get('phone'),
+            email: params.get('email'),
+            product: params.get('product'),
+            quantity: params.get('quantity'),
+            shipping: params.get('shipping'),
+            cost: params.get('cost')
+        };
+    }
+
+    window.onload = function() {
+        const params = getQueryParams();
+        document.getElementById('customer-name').textContent = `${params.firstname} ${params.lastname}`;
+        document.getElementById('customer-address').textContent = `${params.apartment} ${params.address}, ${params.city}`;
+        document.getElementById('customer-zip').textContent = params.zip;
+        document.getElementById('customer-phone').textContent = params.phone;
+        document.getElementById('customer-email').textContent = params.email;
+
+        document.getElementById('product-name').textContent = params.product;
+        document.getElementById('product-quantity').textContent = params.quantity;
+        document.getElementById('shipping-method').textContent = params.shipping;
+        document.getElementById('total-cost').textContent = params.cost;
     }
 </script>
 

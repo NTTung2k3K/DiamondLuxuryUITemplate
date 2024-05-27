@@ -7153,6 +7153,7 @@ User Dashboard tab
 }
 .shop-product-wrap.grid .mirora-product {
   display: block;
+  margin-bottom: 2rem;
 }
 .shop-product-wrap.grid .mirora-product-list {
   display: none;

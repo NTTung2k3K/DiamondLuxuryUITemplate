@@ -199,7 +199,7 @@
                                                     </div>
                                                     <div class="mini-cart__btn">
                                                         <a href="gioHang.html" class="btn btn-fullwidth btn-style-1">Xem Giỏ Hàng</a>
-                                                        <a href="thanhtoan.html" class="btn btn-fullwidth btn-style-1">Thanh Toán</a>
+                                                        <a href="checkout.html" class="btn btn-fullwidth btn-style-1">Thanh Toán</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -347,392 +347,375 @@
         </header>
         <!-- Header Area End -->
 
-        <!-- Breadcumb area Start -->
-        <div class="breadcrumb-area" style="background-color: black;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h1 class="page-title">Thanh Toán Giỏ Hàng</h1>
-                        <ul class="breadcrumb justify-content-center">
-                            <li><a href="trangchu.html">Trang Chủ</a></li>
-                            <li class="current"><a href="thanhtoan.html">Thanh Toán Giỏ Hàng</a></li>
-                        </ul>
+
+        <div class="wrapper bg--shaft" style="background-color: black;">
+            <!-- Khu vực tiêu đề Bắt đầu -->
+            <header class="header headery-style-1">
+                <div class="breadcrumb-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                Kết quả hiển thị cho từ khóa: <span id="search-query"></span>
+                            </div>
+                            <div class="col-12 text-center">
+                                <h1 class="page-title">Tìm Kiếm Thông Tin</h1>
+                                <ul class="breadcrumb justify-content-center">
+                                    <li><a href="trangchu.html">Trang Chủ</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Breadcumb area End -->
-
-        <!-- Main content wrapper start -->
-        <div class="main-content-wrapper" style="background-color: black;">
-            <div class="checkout-area pt--40 pb--80 pt-md--30 pb-md--60">
+            </header>
+            <!-- Khu vực tiêu đề Kết thúc -->
+        
+            <!-- Khung nội dung chính Bắt đầu -->
+            <div class="main-content-wrapper" style="background-color: black;padding-bottom: 25px;">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <!-- Checkout Area Start -->
-                            <div class="checkout-wrapper bg--2">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="checkout-title">
-                                            <h2>Điền Thông Tin Giao Hàng</h2>
-                                        </div>
-                                        <div class="checkout-form">
-                                                <div class="row mb--30">
-                                                    <div class="form__group col-md-6 mb-sm--30">
-                                                        <label for="billing_fname" class="form__label">Họ<span>*</span></label>
-                                                        <input type="text" name="billing_fname" id="first_name" class="form__input form__input--2">
-                                                    </div>
-                                                    <div class="form__group col-md-6">
-                                                        <label for="billing_lname" class="form__label">Tên<span>*</span></label>
-                                                        <input type="text" name="billing_lname" id="last_name" class="form__input form__input--2">
-                                                    </div>
+                            <div class="child-cat row row-small align-equal">
+                                <div class="col large-2 medium-4 small-6">
+                                    <div class="col-inner">
+                                        <div class="cat-item text-center">
+                                            <a href="shop.html">
+                                                <div class="cat-img">
+                                                    <img src="assets/img/pic_product/search/icon-vong-tay-kim-cuong.png" alt="product" >
                                                 </div>
-                                                <div class="row mb--30">
-                                                    <div class="form__group col-12">
-                                                        <label for="billing_country" class="form__label">Thành Phố<span>*</span></label>
-                                                        <select id="city" name="country" class="form__input form__input--2 nice-select">
-                                                            <option value="">Chọn một thành phố…</option>
-                                                            <option value="HN">Hà Nội</option>
-                                                            <option value="HCM">Hồ Chí Minh</option>
-                                                            <option value="HP">Hải Phòng</option>
-                                                            <option value="DN">Đà Nẵng</option>
-                                                            <option value="CT">Cần Thơ</option>
-                                                            <option value="BD">Bình Dương</option>
-                                                            <option value="VT">Vũng Tàu</option>
-                                                            <option value="NT">Nha Trang</option>
-                                                            <option value="DL">Đà Lạt</option>
-                                                            <option value="HUE">Huế</option>
-                                                            <option value="QN">Quảng Ninh</option>
-                                                            <option value="QNA">Quảng Nam</option>
-                                                            <option value="QNG">Quảng Ngãi</option>
-                                                            <option value="DNO">Đắk Nông</option>
-                                                            <option value="DNA">Đắk Lắk</option>
-                                                            <option value="LA">Lâm Đồng</option>
-                                                            <option value="KH">Khánh Hòa</option>
-                                                            <option value="NA">Nghệ An</option>
-                                                            <option value="HD">Hà Đông</option>
-                                                            <option value="HG">Hà Giang</option>
-                                                            <option value="TB">Thái Bình</option>
-                                                            <option value="TV">Trà Vinh</option>
-                                                            <option value="TQ">Tiền Giang</option>
-                                                            <option value="AG">An Giang</option>
-                                                            <option value="BRVT">Bà Rịa - Vũng Tàu</option>
-                                                            <option value="CM">Cà Mau</option>
-                                                            <option value="KG">Kiên Giang</option>
-                                                            <option value="BL">Bạc Liêu</option>
-                                                            <option value="ST">Sóc Trăng</option>
-                                                            <option value="VT">Vĩnh Long</option>
-                                                            <option value="BT">Bến Tre</option>
-                                                            <option value="HCM" selected="selected">Hồ Chí Minh</option>
-                                                        </select>
-                                                    </div>
-                                                    
-                                                </div>
-                                                <div class="row mb--30">
-                                                    <div class="form__group col-12">
-                                                        <label for="billing_streetAddress" class="form__label">Quận/Huyện</label>
-                                                        <input type="text" name="billing_streetAddress" id="district" class="form__input form__input--2">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb--30">
-                                                    <div class="form__group col-12">
-                                                        <label for="billing_streetAddress" class="form__label">Địa Chỉ</label>
-                                                        <input type="text" name="billing_streetAddress" id="address" class="form__input form__input--2">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb--30">
-                                                    <div class="form__group col-12">
-                                                        <label for="billing_apartment" class="form__label">Căn hộ, dãy phòng, căn hộ, v.v. (tùy chọn)</label>
-                                                        <input type="text" name="billing_apartment" id="apartment" class="form__input form__input--2">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb--30">
-                                                    <div class="form__group col-12">
-                                                        <label for="billing_zip" class="form__label">Mã Post/Zip (nếu có)</label>
-                                                        <input type="number" name="billing_zip" id="zip" class="form__input form__input--2">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb--30">
-                                                    <div class="form__group col-md-6 mb-sm--30">
-                                                        <label for="billing_phone" class="form__label">Số Điện Thoại</label>
-                                                        <input type="number" name="billing_phone" id="phone" class="form__input form__input--2">
-                                                    </div>
-                                                    <div class="form__group col-md-6">
-                                                        <label for="billing_email" class="form__label">Địa Chỉ Email<span>*</span></label>
-                                                        <input type="email" name="billing_email" id="email" class="form__input form__input--2">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb--30">
-                                                    <div class="form__group col-12">
-                                                        <label for="orderNotes" class="form__label">Ghi Chú Đặt Hàng</label>
-                                                        <textarea class="form__input form__input--2 form__input--textarea" id="orderNotes" name="orderNotes" placeholder="Ghi chú về đơn đặt hàng của bạn, ví dụ: ghi chú đặc biệt để giao hàng."></textarea>
-                                                    </div>
-                                                </div>
+                                                <h2 class="cat-name">Lắc Tay, Vòng Tay Kim Cương</h2>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 mt-md--30">
-                                        <div class="order-details">
-                                            <h3 class="heading-tertiary">Đơn Hàng Của Bạn</h3>
-                                                <div class="order-table table-content table-responsive mb--30">
-                                                    <table class="table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>Sản Phẩm</th>
-                                                                <th>Số Lượng</th>
-                                                                <th>Tổng Cộng</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Kim cương 3ly9<br>D IF</td>
-                                                                <td>1</td>
-                                                                <td>10,800,000đ</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>Kim cương 4ly1<br>D IF</td>
-                                                                <td>2</td>
-                                                                <td>22,500,000đ</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <table class="table" id="">
-                                                        <tfoot>
-                                                            <tr class="cart-subtotal">
-                                                                <th>Tổng phụ giỏ hàng</th>
-                                                                <td>560,000đ</td>
-                                                            </tr>
-                                                            <tr class="shipping">
-                                                                <th>Phí Vận Chuyển</th>
-                                                                <td>
-                                                                    <div class="shipping-method">
-                                                                        <div class="custom-radio">
-                                                                            <input type="radio" name="shipping_method" id="shipping_flast" checked>
-                                                                            <label for="shipping_flast">Giao Nhanh: 200,000đ</label>
-                                                                        </div>
-                                                                        <div class="custom-radio">
-                                                                            <input type="radio" name="shipping_method" id="shipping_default" checked>
-                                                                            <label for="shipping_default">Giao BT/TK: 50,000đ</label>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                        </tfoot>
-                                                    </table>
-                                                    <table class="table">
-                                                        <tr class="order-total">
-                                                            <th>Tổng Chi Phí</th>
-                                                            <td><span class="order-total-ammount">33,910,000đ</span></td>
-                                                        </tr>
-                                                    </table>
+                                </div>
+                                <div class="col large-2 medium-4 small-6">
+                                    <div class="col-inner">
+                                        <div class="cat-item text-center">
+                                            <a href="shop.html">
+                                                <div class="cat-img">
+                                                    <img src="assets/img/pic_product/search/bong-tai.png" alt="product" >
                                                 </div>
-                                                <!-- User Action Start -->
-                                                <div class="user-actions">
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <div class="user-actions__single user-actions__coupon">
-                                                                <h3><i class="fa fa-cube"></i> Bạn Sở Hữu Mã Ưu Đãi? <span class="expand_action" data-attr="#coupon_info">Ấn Vào Đây Để Nhập Mã</span></h3>
-                                                                <div id="coupon_info" class="user-actions__form user-actions--coupon hide-in-default">
-                                                                    <form action="#" class="form">
-                                                                        <div class="form__group d-flex">
-                                                                            <input type="text" name="coupon" id="coupon" class="form__input form__input--2 form__input--w285 mr--20" placeholder="Mã Ưu Đãi">
-                                                                            <button type="submit" class="btn btn-small btn-style-3">Sử dụng</button>
-                                                                        </div>
-                                                                    </form>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <h2 class="cat-name">Bông Tai Kim Cương</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col large-2 medium-4 small-6">
+                                    <div class="col-inner">
+                                        <div class="cat-item text-center">
+                                            <a href="shop.html">
+                                                <div class="cat-img">
+                                                    <img src="assets/img/pic_product/search/i-mat-day-chuyen-kim-cuong.png" alt="product" >
                                                 </div>
-                                                 <!-- User Action End -->
-                                                <div class="checkout-payment">
-                                                    <form action="#" class="payment-form">
-                                                        <div class="payment-group">
-                                                            <div class="custom-radio payment-radio">
-                                                                <input type="radio" name="payment-method" id="cash">
-                                                                <label class="payment-label" for="cash">Thanh Toán Khi Nhận Hàng</label>
-                                                            </div>
-                                                            <div class="payment-info">
-                                                                <p>Thanh toán bằng tiền mặt khi giao hàng.</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="payment-group">
-                                                            <div class="custom-radio payment-radio">
-                                                                <input type="radio" value="paypal" name="payment-method" id="paypal">
-                                                                <label class="payment-label" for="paypal">
-                                                                    Paypal 
-                                                                    <img src="assets/img/others/AM_mc_vs_ms_ae_UK.png" alt="payment">
-                                                                    <a href="https://www.paypal.com/gb/webapps/mpp/paypal-popup">PayPal là gì?</a>
-                                                                </label>
-                                                            </div>
-                                                            <div class="payment-info paypal">
-                                                                <p>Thanh toán qua PayPal; bạn có thể thanh toán bằng thẻ tín dụng nếu bạn không có tài khoản PayPal.</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="payment-group">
-                                                            <div class="custom-checkbox">
-                                                                <input type="checkbox" name="termscondition" id="termscondition" class="form__checkbox">
-                                                                
-                                                                <label for="termscondition" class="terms-condition-label payment-label">Tôi đã đọc và đồng ý với <a href="DieuKhoanSuDung.html">Các điều khoản và điều kiện của trang web.</a></label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="payment-btn-group text-center">
-                                                            <button type="submit" class="btn btn-style-3">
-                                                                <a href="thanhtoan_thanhcong.html">Đặt Hàng</a>
-                                                            </button>
-                                                        </div>
-                                                    </form>
+                                                <h2 class="cat-name">Dây Chuyền Kim Cương</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col large-2 medium-4 small-6">
+                                    <div class="col-inner">
+                                        <div class="cat-item text-center">
+                                            <a href="shop.html">
+                                                <div class="cat-img">
+                                                    <img src="assets/img/pic_product/search/nhan-cuoi.png" alt="product" >
                                                 </div>
+                                                <h2 class="cat-name">Nhẫn Cưới Kim Cương</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col large-2 medium-4 small-6">
+                                    <div class="col-inner">
+                                        <div class="cat-item text-center">
+                                            <a href="shop.html">
+                                                <div class="cat-img">
+                                                    <img src="assets/img/pic_product/search/nhan-kc.png" alt="product" >
+                                                </div>
+                                                <h2 class="cat-name">Nhẫn Kim Cương</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col large-2 medium-4 small-6">
+                                    <div class="col-inner">
+                                        <div class="cat-item text-center">
+                                            <a href="shop.html">
+                                                <div class="cat-img">
+                                                    <img src="assets/img/pic_product/search/nhan-kim-cuong-cau-hon.png" alt="product" >
+                                                </div>
+                                                <h2 class="cat-name">Nhẫn Kim Cương Cầu Hôn</h2>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Checkout Area End -->
-                        </div>
-                    </div>
-                </div>     
+                            <div class="child-cat row row-small align-equal">
+                                <div class="col large-2 medium-4 small-6">
+                                    <div class="col-inner">
+                                        <div class="cat-item text-center">
+                                            <a href="shop.html">
+                                                <div class="cat-img">
+                                                    <img src="assets/img/pic_product/search/nhan-nam.png" alt="product" >
+                                                </div>
+                                                <h2 class="cat-name">Nhẫn Kim Cương Nam</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col large-2 medium-4 small-6">
+                                    <div class="col-inner">
+                                        <div class="cat-item text-center">
+                                            <a href="shop.html">
+                                                <div class="cat-img">
+                                                    <img src="assets/img/pic_product/search/nhan-kim-cuong-nu.png" alt="product" >
+                                                </div>
+                                                <h2 class="cat-name">Nhẫn Kim Cương Nữ</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col large-2 medium-4 small-6">
+                                    <div class="col-inner">
+                                        <div class="cat-item text-center">
+                                            <a href="shop.html">
+                                                <div class="cat-img">
+                                                    <img src="assets/img/pic_product/search/trang-suc-cuoi.png" alt="product" >
+                                                </div>
+                                                <h2 class="cat-name">Trang Sức Cưới</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col large-2 medium-4 small-6">
+                                    <div class="col-inner">
+                                        <div class="cat-item text-center">
+                                            <a href="shop.html">
+                                                <div class="cat-img">
+                                                    <img src="assets/img/pic_product/search/trang-suc-kim-cuong-chd.png" alt="product" >
+                                                </div>
+                                                <h2 class="cat-name">Trang Sức Kim Cương</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col large-2 medium-4 small-6">
+                                    <div class="col-inner">
+                                        <div class="cat-item text-center">
+                                            <a href="shop.html">
+                                                <div class="cat-img">
+                                                    <img src="assets/img/pic_product/search/vo-nhan.png" alt="product" >
+                                                </div>
+                                                <h2 class="cat-name">Vỏ Nhẫn Kim Cương</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col large-2 medium-4 small-6">
+                                    <div class="col-inner">
+                                        <div class="cat-item text-center">
+                                            <a href="shop.html">
+                                                <div class="cat-img">
+                                                    <img src="assets/img/pic_product/search/vo-mat-day-chuyen.png" alt="product" >
+                                                </div>
+                                                <h2 class="cat-name">Vỏ Mặt Dây Chuyền Kim Cương</h2>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 order-lg-2 mb-md--30">
+                                <div class="non_result">
+                                    <strong>
+                                        Không Tìm Thấy Kết Quả Phù Hợp Với Từ Khóa
+                                    </strong>
+                                </div>
+                            </div>
+                </div>
             </div>
+            <!-- Khung nội dung chính Kết thúc -->
+
         </div>
-        <!-- Main content wrapper end -->
 
-        <!-- Footer Start -->
-        <footer class="footer border-top ptb--40 ptb-md--30">
-            <div class="container">
-                <div class="row mb--40 mb-md--30">
-                    <div class="col-lg-3 col-md-6 mb-md--30">
-                        <div class="footer-widget">
-                            <h3 class="widget-title">Về Diamond Luxury</h3>
-                            <ul class="widget-menu">
-                                <li>Address: Vinhomes Grand Park <br> Q. Thủ Đức</li>
-                                <li>Số Điện Thoại: (012) 800 456 789</li>
-                                <li>Email: diamondluxuryservice@gmail.com</li>
-                            </ul>
-                            <br>
-                            <ul class="social social-round">
-                                <h3 class="widget-title">Theo Dõi Chúng Tôi</h3>
-                                <li class="social__item">
-                                    <a class="social__link"  href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link"  href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                                        <i class="fa fa-youtube"></i>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link"  href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link"  href="https://plus.google.com" target="_blank" rel="noopener noreferrer">
-                                        <i class="fa fa-google-plus"></i>
-                                    </a>
-                                </li>
-                            </ul>
+
+                <!-- Footer Start -->
+                <footer class="footer border-top ptb--40 ptb-md--30">
+                    <div class="container">
+                        <div class="row mb--40 mb-md--30">
+                            <div class="col-lg-3 col-md-6 mb-md--30">
+                                <div class="footer-widget">
+                                    <h3 class="widget-title">Về Diamond Luxury</h3>
+                                    <ul class="widget-menu">
+                                        <li>Address: Vinhomes Grand Park <br> Q. Thủ Đức</li>
+                                        <li>Số Điện Thoại: (012) 800 456 789</li>
+                                        <li>Email: diamondluxuryservice@gmail.com</li>
+                                    </ul>
+                                    <br>
+                                    <ul class="social social-round">
+                                        <h3 class="widget-title">Theo Dõi Chúng Tôi</h3>
+                                        <li class="social__item">
+                                            <a class="social__link"  href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__link"  href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa fa-youtube"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__link"  href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="social__item">
+                                            <a class="social__link"  href="https://plus.google.com" target="_blank" rel="noopener noreferrer">
+                                                <i class="fa fa-google-plus"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-md--30">
+                                <div class="footer-widget">
+                                    <h3 class="widget-title">Thông Tin Công Ty</h3>
+                                    <ul class="widget-menu">
+                                        <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                                        <li><a href="CauHoiThuongGap.html">Câu Hỏi Thường Gặp</a></li>
+                                        <li><a href="banggiakimcuong.html">Bảng Giá Kim Cương</a></li>
+                                        <li><a href="huongdandoninhan.html">Hướng dẫn đo size: Nhẫn kim cương</a></li>
+                                        <li><a href="huongdandodaychuyen.html">Hướng dẫn đo size: Dây chuyền</a></li>
+                                        <li><a href="huongdandovongtay.html">Hướng dẫn đo size: Lắc & vòng tay</a></li>  
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-md--30">
+                                <div class="footer-widget">
+                                    <h3 class="widget-title">Chính Sách Liên Quan</h3>
+                                    <ul class="widget-menu">
+                                        <li><a href="ChinhSachBaoHanh.html">Chính Sách Bảo Hành</a></li>
+                                        <li><a href="ChinhSachBaoMat.html">Chính Sách Bảo Mật</a></li>
+                                        <li><a href="ChinhSachDoiTra.html">Chính Sách Đổi Trả</a></li>
+                                        <li><a href="DieuKhoanSuDung.html">Điều Khoản &amp; Điều Kiện</a></li>
+                                        <li><a href="PhieuQuaTang.html">Phiếu Quà Tặng</a></li>
+                                        <li><a href="ThongTinKhuyenMai.html">Khuyến Mãi</a></li>  
+                                        <li><a href="lienhe.html">Liên Hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="footer-widget">
+                                    <h3 class="widget-title">Vị Trí Của Chúng Tôi</h3>
+                                    <div id="google-map" style="width:100%;height:200px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb--40 mb-md--30">
+                            <div class="col-12">
+                                <ul class="footer-menu text-center">
+                                    <li><a>"Tinh hoa của sự lấp lánh: Nơi bạn tìm thấy sự hoàn hảo trong từng viên kim cương."</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <p class="copyright-text">&copy; Bản Quyền <i class="fa fa-heart"></i> Của DiamondBoiz</a> </p>
+                                <img src="assets/img/others/payment.png" alt="payment">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-md--30">
-                        <div class="footer-widget">
-                            <h3 class="widget-title">Thông Tin Công Ty</h3>
-                            <ul class="widget-menu">
-                                <li><a href="gioithieu.html">Giới Thiệu</a></li>
-                                <li><a href="CauHoiThuongGap.html">Câu Hỏi Thường Gặp</a></li>
-                                <li><a href="banggiakimcuong.html">Bảng Giá Kim Cương</a></li>
-                                <li><a href="huongdandoninhan.html">Hướng dẫn đo size: Nhẫn kim cương</a></li>
-                                <li><a href="huongdandodaychuyen.html">Hướng dẫn đo size: Dây chuyền</a></li>
-                                <li><a href="huongdandovongtay.html">Hướng dẫn đo size: Lắc & vòng tay</a></li>  
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-md--30">
-                        <div class="footer-widget">
-                            <h3 class="widget-title">Chính Sách Liên Quan</h3>
-                            <ul class="widget-menu">
-                                <li><a href="ChinhSachBaoHanh.html">Chính Sách Bảo Hành</a></li>
-                                <li><a href="ChinhSachBaoMat.html">Chính Sách Bảo Mật</a></li>
-                                <li><a href="ChinhSachDoiTra.html">Chính Sách Đổi Trả</a></li>
-                                <li><a href="DieuKhoanSuDung.html">Điều Khoản &amp; Điều Kiện</a></li>
-                                <li><a href="PhieuQuaTang.html">Phiếu Quà Tặng</a></li>
-                                <li><a href="ThongTinKhuyenMai.html">Khuyến Mãi</a></li>  
-                                <li><a href="lienhe.html">Liên Hệ</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <h3 class="widget-title">Vị Trí Của Chúng Tôi</h3>
-                            <div id="google-map" style="width:100%;height:200px;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mb--40 mb-md--30">
-                    <div class="col-12">
-                        <ul class="footer-menu text-center">
-                            <li><a>"Tinh hoa của sự lấp lánh: Nơi bạn tìm thấy sự hoàn hảo trong từng viên kim cương."</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <p class="copyright-text">&copy; Bản Quyền <i class="fa fa-heart"></i> Của DiamondBoiz</a> </p>
-                        <img src="assets/img/others/payment.png" alt="payment">
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Footer End -->
-
-        <!-- Scroll To Top Start -->    
-        <a class="scroll-to-top" href=""><i class="fa fa-angle-double-up"></i></a>
-        <!-- Scroll To Top End -->
-
-        <!-- Popup Subscribe Box Start -->
-        <div class="popup-subscribe-box" id="subscribe-popup">
-            <div class="popup-subscribe-box-content">
-                <div class="popup-subscribe-box-body">
-                    <a href="#subscribe-popup" class="popup-close">Đóng</a>
-                    <h3>Thông Báo</h3>
-                    <p>Đăng ký nhận bản tin của chúng tôi ngay bây giờ và luôn cập nhật các sản phẩm, bộ sưu tập mới nhất và các ưu đãi độc quyền.</p>
-                    <form class="popup-subscribe-form validate" action="" method="post">
-                        <input type="email" name="popup-subscribe-email" id="popup-subscribe-email" placeholder="Nhập email tại đây...">
-                        <input type="submit" value="Theo Dõi" class="btn subscribe-btn btn-medium btn-style-1">
-                        <div class="form-group text-center mt--20">
-                            <input type="checkbox" name="hide-popup" id="hide-popup">
-                            <label for="hide-popup"> Không Hiện Lại Thông Tin Này </label>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- Popup Subscribe Box End -->
-
-    </div>
-    <!-- Main Wrapper End -->
-
-    <script>
-        function checkSearchQuery() {
-            var query = document.getElementById('search').value.trim().toLowerCase();
-            var diamondKeywords = [
-                'kim cương', 'nhẫn kim cương', 'bông tai kim cương', 'vòng cổ kim cương', 
-                'trang sức kim cương', 'diamond', 'ring', 'earrings', 'necklace', 'jewelry'
-            ];
+                </footer>
+                <!-- Footer End -->
         
-            // Kiểm tra xem từ khóa có nằm trong danh sách từ khóa liên quan đến kim cương hay không
-            var hasMeaningfulKeyword = diamondKeywords.some(function(keyword) {
-                return query.includes(keyword);
-            });
+                <!-- Scroll To Top Start -->    
+                <a class="scroll-to-top" href=""><i class="fa fa-angle-double-up"></i></a>
+                <!-- Scroll To Top End -->
         
-            if (hasMeaningfulKeyword) {
-                document.querySelector('.search-form').action = 'timkiem.html';
-            } else {
-                document.querySelector('.search-form').action = 'search_no_results.html';
+                <!-- Popup Subscribe Box Start -->
+                <div class="popup-subscribe-box" id="subscribe-popup">
+                    <div class="popup-subscribe-box-content">
+                        <div class="popup-subscribe-box-body">
+                            <a href="#subscribe-popup" class="popup-close">Đóng</a>
+                            <h3>Thông Báo</h3>
+                            <p>Đăng ký nhận bản tin của chúng tôi ngay bây giờ và luôn cập nhật các sản phẩm, bộ sưu tập mới nhất và các ưu đãi độc quyền.</p>
+                            <form class="popup-subscribe-form validate" action="" method="post">
+                                <input type="email" name="popup-subscribe-email" id="popup-subscribe-email" placeholder="Nhập email tại đây...">
+                                <input type="submit" value="Theo Dõi" class="btn subscribe-btn btn-medium btn-style-1">
+                                <div class="form-group text-center mt--20">
+                                    <input type="checkbox" name="hide-popup" id="hide-popup">
+                                    <label for="hide-popup"> Không Hiện Lại Thông Tin Này </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Popup Subscribe Box End -->
+
+        <script>
+            // Function to get query parameters from URL
+            function getQueryParams() {
+                const params = new URLSearchParams(window.location.search);
+                return {
+                    firstname: params.get('first_name'),
+                    lastname: params.get('last_name'),
+                    city: params.get('city'),
+                    district: params.get('district'),
+                    address: params.get('address'),
+                    apartment: params.get('apartment'),
+                    zip: params.get('zip'),
+                    phone: params.get('phone'),
+                    email: params.get('email')
+                };
             }
-            return true; // Tiếp tục submit form
-        }
+        
+            // Populate the order details based on query parameters
+            window.onload = function() {
+                const params = getQueryParams();
+                const orderDetailsElement = document.getElementById('orderDetails');
+        
+                orderDetailsElement.innerHTML = `
+                    <strong>Thông tin giao hàng của bạn:</strong>
+                    <table border="1" style="margin: 0 auto;">
+                        <tr>
+                            <th>Họ và Tên</th>
+                            <td>${params.firstname} ${params.lastname}</td>
+                        </tr>
+                        <tr>
+                            <th>Địa chỉ</th>
+                            <td>${params.apartment} ${params.address}, ${params.city}</td>
+                        </tr>
+                        <tr>
+                            <th>Mã Zip</th>
+                            <td>${params.zip}</td>
+                        </tr>
+                        <tr>
+                            <th>Số Điện Thoại</th>
+                            <td>${params.phone}</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>${params.email}</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <strong>Thông tin đơn hàng của bạn:</strong>
+                    <table border="1" style="margin: 0 auto;">
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <td><!-- Thêm sản phẩm ở đây --></td>
+                        </tr>
+                        <tr>
+                            <th>Số lượng</th>
+                            <td><!-- Thêm số lượng ở đây --></td>
+                        </tr>
+                        <tr>
+                            <th>Hình Thức Ship</th>
+                            <td><!-- Thêm hình thức ship ở đây --></td>
+                        </tr>
+                        <tr>
+                            <th>Tổng Chi Phí</th>
+                            <td><!-- Thêm tổng chi phí ở đây --></td>
+                        </tr>
+                    </table>
+                `;
+            }
         </script>
-
-
 
         <!-- Google Map -->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxvP66_Xk1ts77oL2Z7EpDxhDD_jMg-D0"></script>
@@ -934,7 +917,6 @@
                 });
             }
         </script>
-
-</body>
-
-</html>
+        
+        </body>
+        </html>
