@@ -155,7 +155,7 @@ strong{
   color: #ededed;
 }
 th, td {
-  border: 0px solid #ddd;
+  border: 1px solid #ddd;
   padding: 8px;
   text-align: center;
   color: #ededed;
@@ -163,10 +163,21 @@ th, td {
 }
 
 th {
-  background-color: #98743600;
+  background-color: #a8741a;
   font-weight: bold;
 }
+.table-custom th, td {
+  border: 0px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  color: #ededed;
+  font-size: larger;
+}
 
+.table-custom th {
+  background-color: #000000;
+  font-weight: bold;
+}
 
 
 /* Search */
