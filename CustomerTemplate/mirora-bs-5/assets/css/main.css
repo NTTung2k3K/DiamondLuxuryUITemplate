@@ -54,6 +54,20 @@ INDEX:
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700");
 
 /*Add thêm cọt*/
+/*btn mua*/
+/*gan link icon*/
+.link-border {
+  border: 1px solid #000;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: inline-block;
+
+}
+
+.link-border:hover {
+  background-color: #f0f0f0;
+}
+/*88888888888*/
 
 .table-container {
   width: 80%;
@@ -75,20 +89,73 @@ strong{
   color: #ededed;
 }
 th, td {
-  border: 0.5px solid #ddd;
+
   padding: 8px;
   text-align: center;
   color: #ededed;
   font-size: larger;
 }
-
+/*
 th {
   background-color: #a8741a;
   font-weight: bold;
+}*/
+
+/*soluong*/
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Điều chỉnh kích thước của hộp điều khiển */
+}
+
+.quantity-controls button {
+  padding: 15px 20px;
+  color: white;
+  background-color: transparent; /* Đặt màu nền là trong suốt */
+  border: 0px solid #ccc;
+  cursor: pointer;
+  transition: border-color 0.3s;
 }
 
 
 
+.quantity-controls input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+  width: 40px; /* Điều chỉnh kích thước của ô nhập */
+}
+/*soluong*/
+.quantity-controls1 button {
+  color: white;
+  background-color: transparent;
+  border: 0.1px solid #ccc;
+  border-radius: 50%; /* Đặt border-radius là 50% để tạo hình tròn */
+  cursor: pointer;
+  transition: border-color 0.3s;
+  margin: 2px;
+  width: 30px; /* Đảm bảo cả hai nút có cùng kích thước */
+  height: 30px; /* Đảm bảo cả hai nút có cùng kích thước */
+}
+
+.quantity-controls1 input {
+  padding: 5px;
+  border: 0px solid #ccc;
+  text-align: center;
+  width: 40px;
+  font-size: large;
+}
+
+
+/*total*/
+.total-cart {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+  float: right;
+}
 /* Search */
 .row-small>.col, .row-small>.flickity-viewport>.flickity-slider>.col {
     margin-bottom: 0;
@@ -129,7 +196,7 @@ th {
 00. Global CSS
 *****************************/
 :root {
-  --bs-body-color: #dee2e6;
+  --bs-body-color: #afafaf;
   --bs-primary: #a8741a;
   --bs-body-bg: #242424;
   --bs-border-color: #2d2d2d;
@@ -1871,10 +1938,10 @@ Corporate
   margin-bottom: 2.5rem !important;
 }
 
-.mb--30 {
+/*.mb--30 {
   margin-bottom: 3rem !important;
 }
-
+*/
 .mb--35 {
   margin-bottom: 3.5rem !important;
 }
@@ -3759,7 +3826,7 @@ Corporate
   padding-left: 0;
 }
 .mainmenu__item > a {
-  padding: 1rem 1rem;
+  padding: 1rem 1.1rem;
   color: #fff;
   font-size: 1.3rem;
   line-height: 2rem;
@@ -3769,13 +3836,12 @@ Corporate
   font-family: "Prata", sans-serif;
 }
 .mainmenu__item > a strong {
-  padding: 0.1rem 0.1rem;
+  padding: 1rem 0rem;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 2rem;
   font-weight: 400;
   font-family: "Prata", sans-serif;
-  border: 2px solid white;
 }
 
 .mainmenu__item.menu-item-has-children > a {
@@ -4417,7 +4483,7 @@ Vertical Menu
   text-align: center;
   color: #fff;
   font-size: 1.6rem;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 0 2rem;
   min-height: 5rem;
   line-height: 5rem;
@@ -4425,6 +4491,32 @@ Vertical Menu
   font-family: "Prata", sans-serif;
   cursor: pointer;
 }
+/*mua*/
+.btn1 {
+  display: inline-block;
+  background-color: #2e2e2e;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  padding: 0 2rem;
+  min-height: 5rem;
+  line-height: 5rem;
+  text-transform: capitalize;
+  font-family: "Prata", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-border1 {
+  border: 1px solid #a8741a; /* Đặt màu border ở đây */
+}
+.btn1:hover {
+  background-color: rgba(46, 46, 46, 0.5); /* Màu nền khi di chuột vào */
+  color: #ffffff; /* Màu chữ khi di chuột vào, nếu cần thay đổi */
+  border: none;
+}/*mua*/
+
 .btn[type=submit], .btn[type=button] {
   border: none;
 }
@@ -6361,7 +6453,7 @@ User Dashboard tab
 }
 
 .post {
-  /*background: #343434;*/
+  background: #343434;
   padding: 1.5rem;
 }
 .post-media {
@@ -6369,7 +6461,6 @@ User Dashboard tab
 }
 .post-media .image img {
   width: 100%;
-  border-radius: 10px;
 }
 .post .entry-meta {
   display: -webkit-box;
@@ -6530,7 +6621,7 @@ User Dashboard tab
   width: 100%;
 }
 .post-details .post-title {
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 
 .single-post {
@@ -6919,7 +7010,7 @@ User Dashboard tab
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   -moz-justify-content: space-between;
-  justify-content: space-between;
+  justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
