@@ -305,10 +305,10 @@ th {
   transition: all 0.3s ease-in;
 }
 
-.product-details-thumbnail .slick-arrow, .post-gallery .slick-btn, .promo__box:before, .modal, .mirora-product-list:hover .primary-image, .mirora-product:hover .product-price-wrapper, .mirora-product:hover .primary-image, .product-img-overlay .btn, .product-img .secondary-image, .static-slider .single-static-slide .static-slide-image:before, .homepage-slider .slick-btn {
+/* .product-details-thumbnail .slick-arrow, .post-gallery .slick-btn, .promo__box:before, .modal, .mirora-product-list:hover .primary-image, .mirora-product:hover .product-price-wrapper, .mirora-product:hover .primary-image, .product-img-overlay .btn, .product-img .secondary-image, .static-slider .single-static-slide .static-slide-image:before, .homepage-slider .slick-btn {
   visibility: hidden;
   opacity: 0;
-}
+} */
 
 .product-details-thumbnail .thumb-menu:hover .slick-btn, .post-gallery:hover .slick-btn, .promo:hover .promo__box:before, .modal.show, .mirora-product-list:hover .product-img-overlay .btn, .mirora-product-list:hover .single-image .primary-image, .mirora-product-list:hover .secondary-image, .mirora-product:hover .product-img-overlay .btn, .mirora-product:hover .single-image .primary-image, .mirora-product:hover .secondary-image, .static-slider .single-static-slide:hover .static-slide-image:before, .homepage-slider:hover .slick-btn {
   visibility: visible;
