@@ -3919,8 +3919,9 @@ Corporate
   font-size: 1rem;
   line-height: 2rem;
   font-weight: 400;
-  font-family: "Prata", sans-serif;
+  font-family: "Prata", sans-serif; 
   border: 2px solid white;
+  border-radius: 10px;
 }
 
 .mainmenu__item.menu-item-has-children > a {
