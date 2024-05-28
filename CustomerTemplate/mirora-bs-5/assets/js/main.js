@@ -71,6 +71,7 @@
       $(this).siblings(".sub-menu").slideToggle("slow");
     });
   }
+  
 
   $("#verticalHeader").slimScroll({
     alwaysVisible: true,

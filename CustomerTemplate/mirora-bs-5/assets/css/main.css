@@ -395,7 +395,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   color: #ffffff;
-  font-family: "Prata", sans-serif; }
+  font-family: "Prata", sans-serif;
+  padding: 5px;
+}
 
 p {
   font-size: 2rem;
@@ -3896,6 +3898,7 @@ Corporate
 *****************************/
 .mainmenu__item {
   display: inline-block;
+  
 }
 .mainmenu__item:first-child a {
   padding-left: 0;
@@ -4373,7 +4376,8 @@ Vertical Menu
   color: #fff;
 }
 .mini-cart__ammount {
-  padding: 0 1.3rem 0 1rem;
+  padding: 0 1rem 0 1rem;
+  font-size: 12px;
 }
 .mini-cart__dropdown-menu {
   min-width: 34rem;
@@ -7203,6 +7207,14 @@ User Dashboard tab
 }
 .shop-toolbar .product-short .nice-select .list {
   width: 16.8rem;
+}
+
+.product-short{
+  justify-content: end;
+}
+
+.product-pages{
+  border-right: 1px solid #2d2d2d;
 }
 
 .product-view-mode {
